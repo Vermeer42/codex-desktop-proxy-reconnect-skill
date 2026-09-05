@@ -17,7 +17,7 @@ Install this repository as a Codex skill. The main instructions are in `SKILL.md
 
 ## Current Status
 
-Skill implementation is ready for validation and publication.
+Published publicly at `https://github.com/Vermeer42/codex-desktop-proxy-reconnect-skill` on 2026-09-05.
 
 ## Key Decisions
 
