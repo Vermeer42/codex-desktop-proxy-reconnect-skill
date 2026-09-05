@@ -19,14 +19,22 @@
 
 ## 安装
 
-把本仓库克隆到 Codex Skills 目录，并命名为 `desktop-proxy-reconnect`：
+把下面这句话发送给 Codex：
+
+> 请从 GitHub 仓库 `Vermeer42/codex-desktop-proxy-reconnect-skill` 的根目录安装名为 `desktop-proxy-reconnect` 的 Skill；安装后，诊断我 Windows 上 ChatGPT Desktop 或 Codex Desktop 的反复重连问题。先读取系统代理和现有配置，未经我明确批准不要修改任何文件。
+
+安装完成后，该 Skill 会在下一轮对话中可用。
+
+<details>
+<summary>手动安装（备用）</summary>
 
 ```powershell
 git clone https://github.com/Vermeer42/codex-desktop-proxy-reconnect-skill.git `
   "$env:USERPROFILE\.codex\skills\desktop-proxy-reconnect"
 ```
 
-安装后重启 Codex。之后可以显式调用 `$desktop-proxy-reconnect`，也可以在 Windows 桌面端的重连/代理问题符合 Skill 描述时让 Codex 自动发现它。
+安装后重启 Codex。
+</details>
 
 ## 典型触发方式
 
@@ -69,14 +77,22 @@ An approval-gated Codex skill for diagnosing a narrow Windows issue: ChatGPT Des
 
 ### Install
 
-Clone this repository into your Codex skills directory under the folder name `desktop-proxy-reconnect`:
+Send the following instruction to Codex:
+
+> Install the Skill named `desktop-proxy-reconnect` from the root of the GitHub repository `Vermeer42/codex-desktop-proxy-reconnect-skill`. Then diagnose repeated reconnecting in ChatGPT Desktop or Codex Desktop on my Windows computer. Read the system proxy and current configuration first, and do not modify any files without my explicit approval.
+
+The Skill is available on the next turn after installation.
+
+<details>
+<summary>Manual installation (fallback)</summary>
 
 ```powershell
 git clone https://github.com/Vermeer42/codex-desktop-proxy-reconnect-skill.git `
   "$env:USERPROFILE\.codex\skills\desktop-proxy-reconnect"
 ```
 
-Restart Codex after installation. The skill can then be selected explicitly as `$desktop-proxy-reconnect`, or be discovered when a Windows desktop reconnect/proxy problem matches its description.
+Restart Codex after installation.
+</details>
 
 ### Typical Trigger
 
